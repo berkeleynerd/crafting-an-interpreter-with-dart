@@ -6,7 +6,7 @@ This repo is a WORK-IN-PROGRESS experimental repurposing of Bob Nystrom's excell
 
 ### Prerequisites
 
-I develop on an OS X machine, but any POSIX system should work too. With a little extra effort, you should be able to get this working on Windows as well, though I can't help you out much.
+This code is being developed on an OS X machine, but any POSIX system should work too. With a little extra effort, you should be able to get this working on Windows as well. I recommend using WSL. 
 
 Most of the work is orchestrated by make. The build scripts, test runner, and other utilities are all written in [Dart][]. Instructions to install Dart are [here][install]. Once you have Dart installed and on your path, run:
 
@@ -65,7 +65,7 @@ $ make lox
 
 This builds the final version of the interpreter as it appears at the end of the book.
 
-You can also see what the interpreters look like at the end of each chapter. (I use this to make sure they are working even in the middle of the book.) This is driven by a script, `tool/bin/split_chapters.dart` that uses the same comment markers for the code snippets to determine which chunks of code are present in each chapter. It takes only the snippets that have been seen by the end of each chapter and produces a new copy of the source in `gen/`, one directory for each chapter's code. (These are also an easier way to view the source code since they have all of the distracting marker comments stripped out.)
+You can also see what the interpreter looks like at the end of each chapter. (This is to make sure it is working even in the middle of the book.) This is driven by a script, `tool/bin/split_chapters.dart` that uses the same comment markers for the code snippets to determine which chunks of code are present in each chapter. It takes only the snippets that have been seen by the end of each chapter and produces a new copy of the source in `gen/`, one directory for each chapter's code. (These are also an easier way to view the source code since they have all of the distracting marker comments stripped out.)
 
 Then, each of those can be built separately. Run:
 
