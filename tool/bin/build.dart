@@ -157,7 +157,7 @@ void _buildSass({bool skipUpToDate = false}) {
 Future<void> _runServer() async {
   Future<shelf.Response> handleRequest(shelf.Request request) async {
     var filePath = p.normalize(p.fromUri(request.url));
-    if (filePath == ".") filePath = "index.html";
+    if (filePath == ".") filePath = "contents.html";
     var extension = p.extension(filePath).replaceAll(".", "");
 
     // Refresh files that are being requested.
