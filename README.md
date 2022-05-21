@@ -1,4 +1,4 @@
-YOU SHOULD NOT READ THIS BOOK.
+# YOU SHOULD NOT READ THIS BOOK.
 
 It is for my own purposes. Go read [crafting interpreters]: http://craftinginterpreters.com instead!
 
